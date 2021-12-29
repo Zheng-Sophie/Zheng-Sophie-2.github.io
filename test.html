@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="google" value="notranslate">
+<!-- App favicon  Version:20211121001-->
+<link rel="shortcut icon" href="./images/favicon.ico">
+<style>
+a[id="gotoContent"] {
+	position: absolute;
+	overflow: visible;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	color: #000;
+	float: left;
+}
+
+a[id="gotoContent"]:active, a[id="gotoContent"]:focus {
+	position: static;
+	width: auto;
+	overflow: visible;
+	clip: auto;
+	margin: 5px;
+	float: left;
+}
+
+.centralBtn {
+	color: #000 !important;
+	background-color: #FFF !important;
+	border: none !important;
+	font-size: 1.4rem !important;
+	margin-bottom: 20px;
+}
+
+.centralBtn:focus {
+	outline: 3px dashed #FFFDF0 !important;
+	outline-offset: 4px !important;
+	border: none !important;
+	background-color: #FCFCFC !important;
+}
+
+.is-smallbtn{
+	image-rendering: -webkit-optimize-contrast;
+	list-style: none;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	font-family: roboto-light,Helvetica,Arial,stheiti,微軟正黑體,sans-serif;
+	cursor: pointer;
+	text-align: left;
+	word-break: break-all;
+	background-color: #ffb81c;;
+	padding: 10px 30px;
+	line-height: 1.2;
+	border-radius: 50px;
+	padding-left: 25px;
+	font-size: 1.1rem !important;
+	margin-top: 5px;
+	margin-bottom: 0;
+	color: white;
+}
+</style>
+<script>
+
+
+
+
+	var pageNum = 1;
+	var firstTimePage2 = true;
+	var firstTimePage3 = true;
+	paceOptions = {
+		ajax : true,
+		elements : true
+	};
+</script>
+<title>COVID-19 公費疫苗預約平台</title>
+
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="description" content="COVID-19 公費疫苗預約平台">
+<meta name="keywords" content="COVID-19 公費疫苗預約平台">
+<meta name="author" content="COVID-19 公費疫苗預約平台">
+<link href="test2.css" rel="stylesheet" type="text/css" />
+<link href="test.css" rel="stylesheet" type="text/css" />
+<script src="1.js"></script>
+<script src="2.js"></script>
+<script async src='3.js'></script>
+</head>
+
+<body>
+	<noscript>您的瀏覽器似乎不支援 JavaScript 語法，但沒關係，這並不會影響到內容的陳述。
+		如需要選擇適合您的字級大小，可利用鍵盤 Ctrl + (+)放大 (-)縮小。 如需要回到上一頁，可使用瀏覽器提供的 Alt +
+		左方向鍵(←)。 如需要列印，可利用鍵盤 Ctrl + p 使用瀏覽器提供的列印功能。</noscript>
+	<!-- Navigation Bar-->
+
+
+
+	<header id="topnav">
+		<!-- Topbar Start -->
+		<div class="navbar-custom">
+			<a href="javascript:void(0)"
+				onclick="document.getElementById('Accesskey_C' + pageNum ).focus();window.scrollTo(0, 0);"
+				id="gotoContent" title="跳到主要內容" tabindex="1" class="key"
+				style="color: #f0f8ff;">跳到主要內容 </a>
+				<select onchange="javascript:location.href=this.value;" id="AU" name="U" style="color:rgb(51, 35, 143)">
+					<option>選單</option>
+					<optgroup label="資格查詢 Qualification Inquiry">
+						<option value=https://vaq.1922.gov.tw/vaq/?language=ch>中文版</option>
+						<option value=https://vaq.1922.gov.tw/vaq/?language=en>English</option>
+					</optgroup>
+					<optgroup label="意願登記 Register">
+						<option value=https://vas.1922.gov.tw/vas/?language=ch>中文版</option>
+						<option value=https://vas.1922.gov.tw/vas/?language=en>English</option>
+					</optgroup>
+					<optgroup label="預約接種 Book Vaccination">
+						<option value=https://vab.1922.gov.tw/vab/?language=ch>中文版</option>
+						<option value=https://vab.1922.gov.tw/vab/?language=en>English</option>
+					</optgroup>
+				</select>
+				
+			<div class="container-fluid">
+				<!-- LOGO -->
+				<div class="logo-box">
+					<a href="" class="logo text-center"
+						tabindex="2" title="COVID-19 公費疫苗預約平台Logo">
+						<div class="d-none d-lg-inline-block mt-3">
+							<img src="https://1922.gov.tw/images/logo-light.png" alt="LOGO" height="60"
+								title="COVID-19 公費疫苗預約平台"> <span
+								class="logo-lg-text-light" id="headerLogoWord">COVID-19 公費疫苗預約平台<br/>
+							
+							</span>
+						</div>
+						<div class="d-block d-lg-none mt-2">
+							<img src="https://1922.gov.tw/images/logo-light.png" alt="LOGO" height="60"
+								title="COVID-19 公費疫苗預約平台">
+						</div>
+					</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<select onchange="javascript:location.href=this.value;" id="AU" name="U" style="color:rgb(51, 35, 143)" >
+			<optgroup label="資格查詢 Qualification Inquiry">
+				<option value=https://vaq.1922.gov.tw/vaq/?language=ch>中文版</option>
+				<option value=https://vaq.1922.gov.tw/vaq/?language=en>English</option>
+			</optgroup>
+			<optgroup label="意願登記 Register">
+				<option value=https://vas.1922.gov.tw/vas/?language=ch>中文版</option>
+				<option value=https://vas.1922.gov.tw/vas/?language=en>English</option>
+			</optgroup>
+			<optgroup label="預約接種 Book Vaccination">
+				<option value=https://vab.1922.gov.tw/vab/?language=ch>中文版</option>
+				<option value=https://vab.1922.gov.tw/vab/?language=en>English</option>
+			</optgroup>
+		</select>
+		
+	</header>
+
+	<!-- End Navigation Bar-->
+
+	<!-- ============================================================== -->
+	<!-- Start Page Content here -->
+	<!-- ============================================================== -->
+
+<div class="wrapper">
+ 
+	<div class="content-page">
+		<div class="container" id="indexDiv">
+			<div  id="COVID_19_CONTENT_DIV" class="pro-box">
+				<h1 class="title-con style-line2 d-block d-sm-none"
+					style="margin-bottom: 0;">
+					<span>公費疫苗</span><br />
+				</h1>
+				<h1  class="title-con style-line2 d-none d-sm-block">
+					<span >COVID-19 公費疫苗預約登記</span>
+				</h1>
+				<p class="title-sm text-danger" style="text-align:center">
+					【重要通知】為因應資通安全，預約平台自本(110)年12月01日起，不再支援傳輸層安全性加密協定TLS1.0、TLS1.1。
+				</p>				
+				<h2 class="title-con  d-none d-sm-block">
+					<span style="font-size: 0.8em;">COVID-19 Vaccination Registration and Reservation</span>
+				</h2>				
+				<p class="title-sm text-danger" style="text-align:left">
+				</p>
+				<p class="title-sm text-danger" style="text-align:left">
+				</p>
+				<a href="javascript:void(0)" id="Accesskey_C1" accesskey="C"
+					title="中間主要內容區，此區塊呈現網頁的網頁內容" tabindex="3"
+					class="key dotted"
+					style="float: left; color: #2F6FA7; font-size: 1.25em; margin-top: 5px;">:::</a>
+				<div class="row">
+					<div class="col-12  col-lg-4 card-item">
+						<div class="card">
+							<div class="card-header b-green">
+								<p class="card-title">資格查詢 Qualification Inquiry</p>
+								<span style="color: #DB0000;font-size: 1.1em;" class="font-weight-bolder">第18期</span><br/>
+								<span style="color : #DB0000;font-size : 1em" >服務時間 12/13 14:00 ~ 12/15 12:00</span><br/>
+								<span style="color: #DB0000;font-size: 1.1em;" class="font-weight-bolder">［有資格，再預約］</span><br/>
+								<span style="color: #DB0000">Please check if you are qualified for 18th round of vaccination before making reservation.<br/></span>
+							</div>							
+							<div class="card-body b-green">
+								<br/>
+								<button  role="button" type="button" class="btn-lg text-dark centralBtn"  title="進入中文版資格查詢" onclick="tryToVaq();"
+									code="1"><sapn class="display-6 font-weight-bolder" >進入中文版</sapn>
+								</button>
+								<button  role="button" type="button" class="btn-lg text-dark centralBtn "  title="GO TO Qualification Inquiry" onclick="tryToVaqEn();" >
+									<sapn class="display-6 font-weight-bolder" >Start(EN)</sapn>
+								</button>
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="col-12 col-lg-4 card-item">
+						<div class="card">
+							<div class="card-header b-blue">
+								<p class="card-title">意願登記 Register</p>
+								<br/>
+								<br/>
+								<br/>
+								<span style="color: #DB0000">可選擇或修改想施打的疫苗種類<br/></span>
+								<span style="color: #DB0000">You can choose or modify your vaccine preference.<br/></span>
+								<span style="color: #DB0000"><br/></span>
+							</div>							
+							<div class="card-body b-blue">
+								<br/>
+								<button   role="button" type="button" class="btn-lg text-dark centralBtn"  title="進入中文版意願登記" onclick="tryToVas();"
+									code="1"><sapn class="display-6 font-weight-bolder" >進入中文版</sapn>
+								</button>
+								<button   role="button" type="button" class="btn-lg text-dark centralBtn "  title="GO TO Register" onclick="tryToVasEn();" >
+									<sapn class="display-6 font-weight-bolder" >Start(EN)</sapn>
+								</button>
+							</div>
+						</div>
+					</div>
+
+
+					
+					<div class="col-12 col-lg-4 card-item">
+						<div class="card">
+							<div class="card-header b-yellow" >
+								<p class="card-title">預約接種 Book Vaccination</p>	
+								<br/>
+								<span style="color: #DB0000">已完成意願登記且符合預約資格者，可選擇疫苗施打地點及時段<br/></span>
+								<span style="color: #DB0000"> If you have registered and are qualified for the appointment, you can choose the location and time of the vaccination.</span>
+								<span style="text-align: center;"><p  class="btn btn-warning btn-rounded font-16"   id="popImg">未滿18歲及滿18歲至20歲民眾<br/>接種注意事項</p></span>
+							</div>
+							<div class="card-body b-yellow">
+								<br/>					
+								<button   role="button" type="button" class="btn-lg text-dark centralBtn"
+									title="進入中文版預約接種" onclick="tryToVab();"
+									code="1">
+									<sapn class="display-6 font-weight-bolder" >
+										進入中文版
+									</sapn>
+								</button>
+								<button   role="button" type="button" class="btn-lg text-dark centralBtn"
+									 title="GO TO Book Vaccination" onclick="tryToVabEn();" >
+									 <sapn class="display-5 font-weight-bolder" >
+										Start(EN)
+									</sapn>
+								</button>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal" style="text-align: center;vertical-align: auto;">
+	    <br /><br /><br />
+	    <span class="close">&times;</span>
+	    <img src="" id="popImgTag" style="max-width: 85%;max-height: 70vh;margin: 15px auto;"
+	        alt="未滿18歲及滿18歲至20歲民眾接種注意事項圖片" title="未滿18歲及滿18歲至20歲民眾接種注意事項">
+	    <div id="caption"></div>
+	</div>
+	<!-- ============================================================== -->
+	<!-- End Page content -->
+	<!-- ============================================================== -->
+
+	<!-- ============================================================== -->
+	<!-- End Page content -->
+	<!-- ============================================================== -->
+	<footer class="footer">
+		<a href="#Z" id="AZ" title="下方功能區塊" accesskey="Z" name="Z"
+		title="下方選單連結區，此區塊列有[使用說明]、[政府網站資料開放宣告]、[資訊安全政策]、[隱私權公告]等連結">:::</a>		
+	<div class="foot-btm">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<ul class="f-link">
+						<li><a style="cursor: pointer;" href="javascript:void(0);"
+							onclick="window.open('info4.html', '資訊安全政策', config='height=600,width=450,scrollbars=yes')"
+							title="[另開新視窗]資訊安全政策"
+							alt="資訊安全政策">資訊安全政策&nbsp;Information Security</a>
+						</li>
+						<li><a style="cursor: pointer;" href="javascript:void(0);"
+							onclick="window.open('info5.html', '隱私權公告', config='height=600,width=450,scrollbars=yes')"
+							title="[另開新視窗]隱私權公告"
+							alt="隱私權公告">隱私權公告&nbsp;Policy Privacy notice</a>
+						</li>				
+					</ul>				
+					<div class="info pb-3">
+						<p>Copyright © 2021 疫苗預約系統</p>
+						<p>Copyright © 2021 COVID-19 Vaccination Registration and Appointment Reservation Platform</p>
+						
+					</div>
+	
+	
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+	<script type="text/javascript">(function(){window['__CF$cv$params']={r:'6c3048067fe10748',m:'eOGYMGUy9Rg.XlKnZdwjEx714jyRRoonuhTD7m6fr1I-1640416559-0-AYBJ54xToeS/JXdsBa9FFcLyK43nEMyS7WFX2CIDzyvK7jl+Np4B5COrXUkAmkkiaTf1ccTjpkjelWoaN5sTFGyILeVIfkLfPBcNgTfLT+dW4x8NhtcTAKmJuNpMNRoApg==',s:[0x8d19b9870c,0xe4bed38b35],}})();</script></body>
+	<script type="text/javascript">
+
+
+		var $a = $('.for_accessibility a');
+		$a.on('click', function (evt) {
+			var $href = $($(this).attr('href')),
+				$target = $href.find('a').eq(0).get(0);
+			setTimeout(function () { try { $target.focus(); } catch (e) { } }, 0);
+		});
+		
+		function tryToVaq(){
+
+			var vaqUrl = "https://vaq.1922.gov.tw/vaq/?language=ch";
+			if(location.href.indexOf("q.1922.gov.tw") > 0 ){
+				vaqUrl = "https://qvaq.1922.gov.tw/vaq/?language=ch";
+			}else if(location.href.indexOf("vvab.1922.gov.tw") > 0){
+				 vaqUrl = "https://vvaq.1922.gov.tw/vaq/?language=ch";
+			}
+			window.location = vaqUrl;
+			
+		}
+
+		function tryToVaqEn(){
+
+			var vaqUrl = "https://vaq.1922.gov.tw/vaq/?language=en";
+			if(location.href.indexOf("q.1922.gov.tw") > 0 ){
+				vaqUrl = "https://qvaq.1922.gov.tw/vaq/?language=en";
+			}else if(location.href.indexOf("vvab.1922.gov.tw") > 0){
+				vaqUrl = "https://vvaq.1922.gov.tw/vaq/?language=en";
+			}
+			window.location = vaqUrl;
+
+		}
+	
+
+		function tryToVas() {
+			var url = "https://vas.1922.gov.tw/vas/?language=ch";
+			if(location.href.indexOf("q.1922.gov.tw") > 0 ){
+				url = "https://qvas.1922.gov.tw/vas/?language=ch";
+			}else if(location.href.indexOf("vvab.1922.gov.tw") > 0){
+				url = "./vas/?language=ch";
+			}
+			window.location = url;				
+		};
+		
+		function tryToVab(){
+			var url = "https://vab.1922.gov.tw/vab/?language=ch";
+			if(location.href.indexOf("q.1922.gov.tw") > 0 ){
+				url = "https://qvab.1922.gov.tw/vab/?language=ch";
+			}else if(location.href.indexOf("vvab.1922.gov.tw") > 0){
+				url = "./vab/?language=ch";
+			}
+			window.location = url;									
+		}
+	
+	
+		function tryToVasEn() {
+			var url = "https://vas.1922.gov.tw/vas/?language=en";
+			if(location.href.indexOf("q.1922.gov.tw") > 0 ){
+				url = "https://qvas.1922.gov.tw/vas/?language=en";
+			}else if(location.href.indexOf("vvab.1922.gov.tw") > 0){
+				url = "./vas/?language=en";
+			}
+			window.location = url;			
+		};
+		
+		function tryToVabEn(){
+			var url = "https://vab.1922.gov.tw/vab/?language=en";
+			if(location.href.indexOf("q.1922.gov.tw") > 0 ){
+				url = "https://qvab.1922.gov.tw/vab/?language=en";
+			}else if(location.href.indexOf("vvab.1922.gov.tw") > 0){
+				url = "./vab/?language=en";
+			}
+			window.location = url;	
+		}
+
+		var modal = document.getElementById("myModal");
+        var img = document.getElementById("popImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        var COVID_19_CONTENT_DIV = document.getElementById("COVID_19_CONTENT_DIV");
+        var popImgTag = document.getElementById("popImgTag");
+        img.onclick = function () {
+
+			COVID_19_CONTENT_DIV.style.display = "none";
+            modal.style.display = "block";
+            popImgTag.src = "./assets/images/notefy.jpg";
+            captionText.innerHTML = "未滿18歲及滿18歲至20歲民眾接種注意事項";
+
+
+        }
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function () {
+            modal.style.display = "none";
+            COVID_19_CONTENT_DIV.style.display = "block"
+        }
+        modal.onclick = function () {
+            modal.style.display = "none";
+            COVID_19_CONTENT_DIV.style.display = "block"
+        }
+
+		function tall() {
+		  $('.card-header').matchHeight({
+		    byRow: true
+		  });
+		  $('.card-body p').matchHeight({
+		    byRow: true
+		  });
+		}	
+	 	tall();		
+	
+	</script>
+</body>
+</html>
